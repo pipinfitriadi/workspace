@@ -8,26 +8,11 @@
 
 {
   environment.packages = with pkgs; [
-    vim
+    ripgrep
+    python312
+    neovim
 
-    procps
-    killall
-    diffutils
-    findutils
-    utillinux
-    tzdata
-    hostname
-    man
-    gnugrep
-    gnupg
     gnused
-    gnutar
-    bzip2
-    gzip
-    xz
-    zip
-    unzip
-
     ncurses
     git
     code-server
