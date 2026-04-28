@@ -31,6 +31,7 @@
     ncurses
     git
     code-server
+    cloudflared
   ];
 
   environment.etcBackupExtension = ".bak";
