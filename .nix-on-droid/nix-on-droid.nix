@@ -4,7 +4,7 @@
 # Proprietary and confidential
 # Written by Pipin Fitriadi <pipinfitriadi@gmail.com>, 16 April 2026
 
-{ config, lib, pkgs, nixpkgs-25_05, ... }:
+{ config, lib, pkgs, pkgs-25_05, ... }:
 
 {
   environment.packages = with pkgs; [
@@ -15,7 +15,7 @@
     gnused
     ncurses
     git
-    nixpkgs-25_05.code-server # v3.9.0
+    pkgs-25_05.code-server # v3.9.0
     cloudflared
   ];
 
@@ -28,4 +28,6 @@
   '';
 
   time.timeZone = "Asia/Jakarta";
+
+  android-integration.termux-setup-storage.enable = true;
 }
