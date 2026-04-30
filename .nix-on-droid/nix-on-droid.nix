@@ -4,7 +4,7 @@
 # Proprietary and confidential
 # Written by Pipin Fitriadi <pipinfitriadi@gmail.com>, 16 April 2026
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, nixpkgs-25_05, ... }:
 
 {
   environment.packages = with pkgs; [
@@ -15,7 +15,7 @@
     gnused
     ncurses
     git
-    code-server
+    nixpkgs-25_05.code-server # v3.9.0
     cloudflared
   ];
 
